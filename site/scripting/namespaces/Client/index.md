@@ -214,6 +214,8 @@ if (runebook) {
 
 Attempts to find an object in the world with the specified search parameters, returning it if found.
 
+**Note:** The `range` parameter when combined with the `source` container parameter specifies the depth to search.
+
 ###### Parameters
 
 | Parameter       | Type                                                                                                                                             |
@@ -224,9 +226,22 @@ Attempts to find an object in the world with the specified search parameters, re
 | `amount`?       | `null` \| `number`                                                                                                                               |
 | `range`?        | `null` \| `number`                                                                                                                               |
 
-###### Example
+###### Examples
 
 ```ts
+// Print out all the gold in the players backpack, without iterating sub-containers.
+const goldType = 0xeed;
+ignoreList.clear();
+
+let gold: Item | undefined;
+while ((gold = client.findType(goldType, undefined, player.backpack, undefined, 0) as Item)) {
+  console.log(gold.name);
+  ignoreList.add(gold);
+}
+```
+
+```ts
+//  Use any bandages that can be found
 const bandageType = 0xe21;
 const bandages = client.findType(bandageType);
 
@@ -914,15 +929,16 @@ client.toggleAuras();
 
 `object`
 
-| Member       | Type                  |
-| :----------- | :-------------------- |
-| `amount`     | `number`              |
-| `data`       | `null` \| `string`    |
-| `graphic`    | `number`              |
-| `hue`        | `number`              |
-| `name`       | `string`              |
-| `properties` | `null` \| `object`\[] |
-| `serial`     | `number`              |
+| Member         | Type                  |
+| :------------- | :-------------------- |
+| `amount`       | `number`              |
+| `data`         | `null` \| `string`    |
+| `graphic`      | `number`              |
+| `hue`          | `number`              |
+| `isPartialHue` | `boolean`             |
+| `name`         | `string`              |
+| `properties`   | `null` \| `object`\[] |
+| `serial`       | `number`              |
 
 </div>
 

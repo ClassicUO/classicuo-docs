@@ -293,7 +293,10 @@ if (Gump.exists(0xbb1b5472)) {
 ##### findOrWait()
 
 ```ts
-static findOrWait(serialOrText: string | number, timeoutMs?: number): undefined | Gump
+static findOrWait(
+   serialOrText: string | number,
+   timeoutMs?: number,
+   fromServer?: boolean): undefined | Gump
 ```
 
 Find a gump by its serial or containing certain text, or wait for it to appear
@@ -304,6 +307,7 @@ Find a gump by its serial or containing certain text, or wait for it to appear
 | :------------- | :------------------- | :---------- |
 | `serialOrText` | `string` \| `number` |             |
 | `timeoutMs`?   | `number`             |             |
+| `fromServer`?  | `boolean`            |             |
 
 ###### Returns
 
@@ -322,6 +326,17 @@ if (gump) {
 const gump = Gump.findOrWait('Blacksmithy Selection Menu');
 if (gump) {
   gump.reply(1); // Gump is open, simulate pressing a button
+}
+```
+
+```ts
+const bag = client.findObject(0x4021c7b1);
+if (bag) {
+  player.use(bag);
+  const gump = Gump.findOrWait(bag, 1000, false); // That 'false' means 'Search for local gumps'. Default is 'true'
+  if (gump) {
+    client.sysMsg('gump found');
+  }
 }
 ```
 

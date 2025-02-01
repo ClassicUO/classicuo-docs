@@ -1170,6 +1170,25 @@ player.click(player);
 ---
 
 <div class="heading-level-5">
+<a id="dresskr" name="dresskr"></a>
+
+##### dressKr()
+
+```ts
+dressKr(items: (number | Item)[]): void
+```
+
+###### Parameters
+
+| Parameter | Type                                             |
+| :-------- | :----------------------------------------------- |
+| `items`   | (`number` \| [`Item`](../Item/index.md#item))\[] |
+
+</div>
+
+---
+
+<div class="heading-level-5">
 <a id="equip" name="equip"></a>
 
 ##### equip()
@@ -1698,6 +1717,25 @@ Toggle War Mode
 ```ts
 player.toggleWarMode();
 ```
+
+</div>
+
+---
+
+<div class="heading-level-5">
+<a id="undresskr" name="undresskr"></a>
+
+##### undressKr()
+
+```ts
+undressKr(layers: Layers[]): void
+```
+
+###### Parameters
+
+| Parameter | Type        |
+| :-------- | :---------- |
+| `layers`  | `Layers`\[] |
 
 </div>
 
