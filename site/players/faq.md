@@ -21,11 +21,55 @@ click Play.
 
 ### Why do I need to log in using Discord?
 
-**Discord authentication helps us prevent abuse of the client**, and curbs cheating as shard owners can choose to ban people
-via Discord account rather than just an IP which can be easily changed.
+**Logging in with Discord helps keep the Web Client secure and running smoothly.**
 
-The client also store user profiles in the cloud, so you can go to any device and keep your same macros,
-scripts, hotkeys from device to device.
+By requiring authentication, we can **filter out bots and bad actors**, preventing spam, abuse, and DDoS attacks that could flood the service and cause **lag** or downtime. It also helps with **rate-limiting**, so a handful of people can’t overload the system and ruin performance for everyone else.
+
+Additionally, shard owners can **ban players by Discord account**, making bans much harder to dodge than just blocking an IP address.
+
+Lastly, logging in also **syncs your settings across devices**, so your **macros, scripts, and hotkeys** are available no matter where you play.
+
+### What information about me do you collect?
+
+::: tip  
+**We do not collect, access, or store any personally identifiable information (PII) such as real names, email addresses, or payment details.**
+
+You can verify we do not have access to this data by checking Discord's consent screen when logging in.
+:::
+
+We respect your privacy and will never sell or share your data with advertisers or unrelated third-party services. 
+The information we collect is strictly necessary for core functionality and is never used for advertising or profiling.
+
+However, **when connecting to a shard your Discord identifier and username is shared for authentication purposes**. 
+See the [WebIdentity packet](https://github.com/ClassicUO/packets/?tab=readme-ov-file#packets) for details on what is sent.
+
+#### Discord Account
+
+To sync your game profile across devices and facilitate login, we collect:
+- **Account identifier** (e.g., `91796932425435572`) – A numeric ID that uniquely identifies your Account.
+- **Username** (e.g., `blank1234`) – Used for displaying account-related information in the client.
+- **Avatar** (i.e., your profile picture) – Used for the user icon displayed in the client (not shared with shards).
+
+---
+
+#### Analytics
+
+To improve performance and reliability, we collect:
+- **Last visit timestamp** – Helps us estimate active user counts for capacity planning.
+- **Error reports** – If the Web Client encounters an issue, we collect anonymized error logs to diagnose and fix bugs.
+- **Backend connection logs** – Retained for **30 days** to help us investigate and diagnose network connection issues when they arise.
+
+---
+
+#### Assistant State
+
+We store your assistant state for syncing, which includes (but not limited to):
+- Game Profile(s)
+- Macros
+- Scripts
+- Agent settings
+
+---
 
 ### Will the web client support Razor?
 
