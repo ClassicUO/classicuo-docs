@@ -25,6 +25,23 @@ while (true) {
 #### Properties
 
 <div class="heading-level-5">
+<a id="_tag" name="_tag"></a>
+
+##### \_tag
+
+```ts
+_tag: 'Mobile';
+```
+
+###### Inherited from
+
+[`Mobile`](../Mobile/index.md#mobile).[`_tag`](../Mobile/index.md#_tag)
+
+</div>
+
+---
+
+<div class="heading-level-5">
 <a id="backpack" name="backpack"></a>
 
 ##### backpack
@@ -566,6 +583,19 @@ The mobiles current mana. For the player it returns the real value, for other mo
 ###### Inherited from
 
 [`Mobile`](../Mobile/index.md#mobile).[`mana`](../Mobile/index.md#mana)
+
+</div>
+
+---
+
+<div class="heading-level-5">
+<a id="map" name="map"></a>
+
+##### map
+
+```ts
+map: number;
+```
 
 </div>
 

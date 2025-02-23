@@ -19,6 +19,19 @@ mobile entity has attributes such as health, position and stat attributes. Mobil
 #### Properties
 
 <div class="heading-level-5">
+<a id="_tag" name="_tag"></a>
+
+##### \_tag
+
+```ts
+_tag: 'Mobile';
+```
+
+</div>
+
+---
+
+<div class="heading-level-5">
 <a id="direction" name="direction"></a>
 
 ##### direction

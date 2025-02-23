@@ -15,7 +15,9 @@
 | [Prompt](namespaces/Prompt/index.md)         | -           |
 | [Skill](namespaces/Skill/index.md)           | -           |
 | [Target](namespaces/Target/index.md)         | -           |
+| [WorldMap](namespaces/WorldMap/index.md)     | -           |
 | [globalThis](namespaces/globalThis/index.md) | -           |
+| [index](namespaces/index/index.md)           | -           |
 | [enums](namespaces/enums/index.md)           | -           |
 
 ## Functions
@@ -102,6 +104,19 @@ const popupMenu: PopupMenu;
 
 ```ts
 const target: Target;
+```
+
+</div>
+
+---
+
+<div class="heading-level-3">
+<a id="worldmap" name="worldmap"></a>
+
+### worldMap
+
+```ts
+const worldMap: WorldMap;
 ```
 
 </div>

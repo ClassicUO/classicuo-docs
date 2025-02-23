@@ -74,6 +74,14 @@
         "link": "/scripting/namespaces/Target/"
       },
       {
+        "text": "WorldMap",
+        "link": "/scripting/namespaces/WorldMap/"
+      },
+      {
+        "text": "index",
+        "link": "/scripting/namespaces/index/"
+      },
+      {
         "text": "enums",
         "link": "/scripting/namespaces/enums/"
       }

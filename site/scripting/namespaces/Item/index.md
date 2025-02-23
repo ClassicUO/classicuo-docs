@@ -12,6 +12,19 @@
 #### Properties
 
 <div class="heading-level-5">
+<a id="_tag" name="_tag"></a>
+
+##### \_tag
+
+```ts
+_tag: 'Item';
+```
+
+</div>
+
+---
+
+<div class="heading-level-5">
 <a id="amount" name="amount"></a>
 
 ##### amount
